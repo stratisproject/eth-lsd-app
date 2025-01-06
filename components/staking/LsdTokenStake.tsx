@@ -96,7 +96,7 @@ export const LsdTokenStake = () => {
     return Number(transactionCost) * Number(ethPrice) + "";
   }, [transactionCost, ethPrice]);
 
-  const [buttonDisabled, buttonText, isButtonSecondary] = useMemo(() => {
+  const [buttonDisabled, buttonText] = useMemo(() => {
     if (!depositEnabled) {
       return [true, "Stake is paused"];
     }
@@ -104,7 +104,7 @@ export const LsdTokenStake = () => {
       return [false, "Connect Wallet"];
     }
     if (isWrongMetaMaskNetwork) {
-      return [false, `Wrong network, click to change into ${getEthereumChainName()}`, true];
+      return [false, `Switch Network`];
     }
     if (!stakeAmount || isNaN(Number(stakeAmount)) || Number(stakeAmount) === 0 || isNaN(Number(balance))) {
       return [true, "Stake"];
@@ -266,18 +266,18 @@ export const LsdTokenStake = () => {
         mt=".18rem"
         className="mx-[.2rem]"
         height=".56rem"
-        type={isButtonSecondary ? "secondary" : "primary"}
+        type={"primary"}
         onClick={clickStake}
         border="none"
       >
         <div className="flex items-center">
           {buttonText}
 
-          {(buttonText.indexOf("Wrong network") >= 0 || buttonText.indexOf("Insufficient FIS.") >= 0) && (
+          {/* {(buttonText.indexOf("Wrong network") >= 0 || buttonText.indexOf("Insufficient FIS.") >= 0) && (
             <div className="ml-[.12rem] flex items-center">
-              <Icomoon icon="arrow-right" size=".12rem" color="#222C3C" />
+              <Icomoon icon="arrow-right" size=".12rem" color="#fff" />
             </div>
-          )}
+          )} */}
         </div>
       </CustomButton>
 

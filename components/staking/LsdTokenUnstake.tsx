@@ -105,12 +105,12 @@ export const LsdTokenUnstake = () => {
     return Number(ethPrice) * Number(estimateFee);
   }, [ethPrice, estimateFee]);
 
-  const [buttonDisabled, buttonText, isButtonSecondary] = useMemo(() => {
+  const [buttonDisabled, buttonText] = useMemo(() => {
     if (walletNotConnected) {
       return [false, "Connect Wallet"];
     }
     if (isWrongMetaMaskNetwork) {
-      return [false, `Wrong network, click to change into ${getEthereumChainName()}`, true];
+      return [false, `Switch Network`];
     }
 
     if (
@@ -226,7 +226,7 @@ export const LsdTokenUnstake = () => {
         }}
       >
         <div className="flex items-center">
-          <Icomoon icon="tip" size=".2rem" color="#fff" />
+          <Icomoon icon="tip" size=".2rem" color="#fff" className="flex-none" />
 
           <div className="ml-[.06rem] text-color-text2 text-[.14rem] leading-tight">
             Unstaking may take around <span className="text-color-text1">{getUnstakeDuration()}</span>. After that,
@@ -234,7 +234,7 @@ export const LsdTokenUnstake = () => {
           </div>
         </div>
 
-        <Icomoon icon="right" color="white" size=".11rem" />
+        <Icomoon icon="right" color="white" size=".11rem" className="flex-none" />
       </div>
 
       <div className="h-[1.07rem] mt-[.18rem] pt-[.24rem] mx-[.2rem] bg-color-bgPage rounded-[.1rem] border border-white/5">
@@ -297,17 +297,17 @@ export const LsdTokenUnstake = () => {
         className="mx-[.2rem]"
         height=".56rem"
         onClick={clickUnstake}
-        type={isButtonSecondary ? "secondary" : "primary"}
+        type={"primary"}
         border="none"
       >
         <div className="flex items-center">
           {buttonText}
 
-          {(buttonText.indexOf("Wrong network") >= 0 || buttonText.indexOf("Insufficient FIS.") >= 0) && (
+          {/* {(buttonText.indexOf("Wrong network") >= 0 || buttonText.indexOf("Insufficient FIS.") >= 0) && (
             <div className="ml-[.12rem] flex items-center">
               <Icomoon icon="arrow-right" size=".12rem" color="#222C3C" />
             </div>
-          )}
+          )} */}
         </div>
       </CustomButton>
 

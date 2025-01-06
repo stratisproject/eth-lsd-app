@@ -211,7 +211,7 @@ const UserInfo = (props: { auditExpand: boolean }) => {
             className="cursor-pointer flex items-center justify-between"
             onClick={() => {
               addressPopupState.close();
-              dispatch(disconnectWallet());
+              disconnectWallet();
             }}
           >
             <div className="ml-[.12rem] text-color-text1 text-[.16rem]">Disconnect</div>

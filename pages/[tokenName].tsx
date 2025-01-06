@@ -97,7 +97,12 @@ const ETHPage = () => {
       if (content.content.endsWith("\n")) {
         return (
           <div className={classNames(index > 0 ? "mt-faqGap" : "")} key={index}>
-            <a className="text-color-link cursor-pointer" href={content.link} target="_blank" rel="noreferrer">
+            <a
+              className="text-color-link cursor-pointer break-words"
+              href={content.link}
+              target="_blank"
+              rel="noreferrer"
+            >
               {content.content.trimEnd()}
             </a>
           </div>
@@ -105,7 +110,7 @@ const ETHPage = () => {
       } else {
         return (
           <a
-            className="text-color-link cursor-pointer"
+            className="text-color-link cursor-pointer break-words"
             href={content.link}
             target="_blank"
             rel="noreferrer"

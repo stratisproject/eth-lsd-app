@@ -101,7 +101,7 @@ const Navbar = () => {
 const UserInfo = (props: { auditExpand: boolean }) => {
   const { auditExpand } = props;
   const dispatch = useAppDispatch();
-  const { metaMaskAccount, metaMaskChainId } = useWalletAccount();
+  const { metaMaskAccount } = useWalletAccount();
 
   const hideAddress = useMemo(() => {
     return auditExpand;
@@ -157,7 +157,7 @@ const UserInfo = (props: { auditExpand: boolean }) => {
               addressPopupState.isOpen ? "text-text1 " : "text-color-text1"
             )}
           >
-            {getShortAddress(metaMaskAccount, 5)},{metaMaskChainId}
+            {getShortAddress(metaMaskAccount, 5)}
           </div>
         )}
       </div>

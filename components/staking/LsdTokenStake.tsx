@@ -259,7 +259,6 @@ export const LsdTokenStake = () => {
           </div>
         </div>
       </div>
-      1: {metaMaskChainId} 2:{getEthereumChainId()}
       <CustomButton
         loading={stakeLoading}
         disabled={buttonDisabled}

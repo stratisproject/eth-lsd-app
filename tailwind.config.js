@@ -38,7 +38,7 @@ module.exports = {
       text2Dark: "#FFFFFF80",
       textHighlight: "#ffffff",
       textHighlightDark: "#222C3C",
-      link: "#dcb3ff",
+      link: "#BDBDFF",
       linkDark: "#ffffff",
       error: "#FF52C4",
     },

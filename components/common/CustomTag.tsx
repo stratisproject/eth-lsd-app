@@ -17,7 +17,7 @@ export const CustomTag = (props: CustomTagProps) => {
       )}
       style={{
         background:
-          !type || type === "primary" ? "linear-gradient(279.55deg, #7a03c1  -1.42%, #fc62fd 96.22%)" : "none",
+          !type || type === "primary" ? "linear-gradient(279.55deg, #7168C0  -1.42%, #412F8C 96.22%)" : "none",
       }}
     >
       {props.children}

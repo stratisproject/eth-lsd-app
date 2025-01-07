@@ -215,7 +215,7 @@ export const NoticeItem = (props: { notice: LocalNotice; visible: boolean; onUpd
               className={classNames(
                 "ml-[.06rem] h-[.2rem] rounded-[.04rem] px-[.04rem] flex items-center text-[.12rem]",
                 notice.status === "Confirmed"
-                  ? "bg-[#7130bb] text-text1 dark:text-white "
+                  ? "bg-[#4c42cf] text-text1 dark:text-white "
                   : notice.status === "Error"
                   ? "bg-[#FEA4FF80] text-error dark:text-white "
                   : "bg-text2/20 text-text1 dark:text-white "

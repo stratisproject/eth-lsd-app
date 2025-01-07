@@ -289,7 +289,7 @@ const AuditComponent = (props: AuditComponentProps) => {
   return (
     <div
       className={classNames(
-        "h-[.42rem] rounded-[.3rem] border-[#B794F4] flex items-center",
+        "h-[.42rem] rounded-[.3rem] border-[#665ab2] flex items-center",
         expand ? "border-[0.01rem]" : ""
       )}
     >

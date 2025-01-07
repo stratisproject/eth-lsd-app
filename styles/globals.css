@@ -135,7 +135,7 @@ body {
   background: linear-gradient(0deg, #101112, #141516, #101112);
 }
 .g-text-pink {
-  background: linear-gradient(90deg, #ce94f4, #b875f2, #573c6b);
+  background: linear-gradient(90deg, #7168c0, #53429a);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -144,5 +144,5 @@ body {
 .g-border-pink {
   position: relative;
   padding: 1px !important;
-  background: linear-gradient(180deg, #9c75f2, #9c75f200);
+  background: linear-gradient(180deg, #665ab2, #665ab200);
 }

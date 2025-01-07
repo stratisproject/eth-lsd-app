@@ -29,6 +29,7 @@ jobs:
 
       - name: Deploy App
         run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "rm -rf /opt/eth-lsd-app/out && mkdir -p /opt/eth-lsd-app/out && exit"
           rsync -r ./out/* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/opt/eth-lsd-app/out
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "pm2 restart app && exit"
           echo "Deployment completed."

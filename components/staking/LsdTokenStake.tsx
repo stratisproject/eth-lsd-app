@@ -259,7 +259,7 @@ export const LsdTokenStake = () => {
           </div>
         </div>
       </div>
-
+      {metaMaskChainId} {getEthereumChainId()}
       <CustomButton
         loading={stakeLoading}
         disabled={buttonDisabled}
@@ -280,7 +280,6 @@ export const LsdTokenStake = () => {
           )} */}
         </div>
       </CustomButton>
-
       <div
         className="mx-[.75rem] my-[.24rem] grid items-stretch font-[500] max-[560px]:mx-[.1rem]"
         style={{ gridTemplateColumns: "40% 30% 30%" }}
@@ -330,7 +329,6 @@ export const LsdTokenStake = () => {
           </div>
         </div>
       </div>
-
       <HoverPopover
         {...bindPopover(ratePopupState)}
         anchorOrigin={{

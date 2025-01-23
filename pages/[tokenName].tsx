@@ -204,22 +204,22 @@ const ETHPage = () => {
 
       <div className="w-full max-w-[1280px] mx-auto px-[.1rem]  max-[1200px]:max-w-[720px]">
         <div className="my-[.36rem]">
-          {/* {showWithdrawTab && (
+          {showWithdrawTab && (
             <DashboardTabs selectedTab={selectedTab} onChangeTab={updateTab} showWithdrawTab={showWithdrawTab} />
-          )} */}
+          )}
 
           <div className="mt-[.36rem] flex max-[1200px]:flex-col">
             <div className={classNames("flex-1 max-w-[7.2rem] w-full")}>
               {(selectedTab === "stake" || selectedTab === "unstake") && <StakePage />}
 
-              {/* {selectedTab === "withdraw" && (
+              {selectedTab === "withdraw" && (
                 <WithdrawUnstaked
                   overallAmount={overallAmount}
                   willReceiveAmount={willReceiveAmount}
                   claimableAmount={claimableAmount}
                   claimableWithdrawals={claimableWithdrawals}
                 />
-              )} */}
+              )}
             </div>
 
             <div className="ml-[.6rem] flex-1  max-w-[20rem] max-[1200px]:ml-0 max-[1200px]:mt-[.4rem]">

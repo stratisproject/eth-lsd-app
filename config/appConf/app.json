@@ -4,7 +4,9 @@
   "token": {
     "tokenName": "STRAX",
     "lsdTokenName": "rSTRAX",
-    "supportChains": ["Stratis"],
+    "supportChains": [
+      "Stratis"
+    ],
     "lsdTokenIconUri": "/images/token/STRAX.svg",
     "tokenIcon": "/images/token/STRAX.svg",
     "lsdTokenIcon": "/images/token/rSTRAX.svg"
@@ -16,17 +18,16 @@
   "apr": 0,
   "detailedInfo": {
     "audit": {
-      "nameList": ["Peckshield", "Blocksec"],
+      "nameList": [
+        "Peckshield",
+        "Blocksec"
+      ],
       "link": "https://github.com/stafiprotocol/security/blob/main/audits/202304_BlockSec_StaFi-ETHWithdraw/blocksec_stafi_v1.0-signed.pdf"
     },
     "listedIns": [
       {
-        "name": "Coingecko",
-        "link": "https://www.coingecko.com/en/coins/stafi-staked-eth"
-      },
-      {
         "name": "Defilama",
-        "link": "https://defillama.com/yields/pool/b2fe5b13-eca4-47cc-b3fd-1de24a296018"
+        "link": "https://defillama.com/protocol/stratis-liquid-staking"
       }
     ]
   },

@@ -257,6 +257,7 @@ const ETHPage = () => {
 
                   <div className="ml-[.06rem] text-color-text1">Listed In</div>
                 </div>
+                <div className="grid grid-cols-2 md:grid-cols-3">
                 {getDetailInfoListedIns().map((item: { name: string; link: string }) => (
                   <div
                     className="cursor-pointer mt-[.12rem] hover:text-link"
@@ -269,6 +270,7 @@ const ETHPage = () => {
                     <Icomoon icon="share" size=".12rem" />
                   </div>
                 ))}
+                </div>
               </div>
               <div className="mt-[.15rem] g-bg-box border border-white/5 rounded-[.08rem] p-[.24rem] text-[.14rem]">
                 <div className="text-color-text1 ">{getLsdEthName()} Token Contract Address</div>

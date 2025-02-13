@@ -88,5 +88,5 @@ export function chainAmountToHuman(num: string | number) {
 }
 
 export function formatScientificNumber(n: number | string) {
-  return n.toLocaleString("fullwide", { useGrouping: false });
+  return n.toLocaleString("en", { useGrouping: false });
 }

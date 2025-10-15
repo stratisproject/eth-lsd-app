@@ -5,7 +5,7 @@
     "tokenName": "STRAX",
     "lsdTokenName": "rSTRAX",
     "supportChains": [
-      "Stratis"
+      "Xertra"
     ],
     "lsdTokenIconUri": "/images/token/STRAX.svg",
     "tokenIcon": "/images/token/STRAX.svg",

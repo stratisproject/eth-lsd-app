@@ -3,8 +3,8 @@
     "id": 205205,
     "name": "Auroria"
   },
-  "rpc": "https://auroria.rpc.stratisevm.com",
-  "explorer": "https://auroria.explorer.stratisevm.com",
+  "rpc": "https://auroria.rpc.xertra.com",
+  "explorer": "https://auroria.explorer.xertra.com",
   "blockSeconds": 15,
   "contracts": {
     "lsdTokenContract": {

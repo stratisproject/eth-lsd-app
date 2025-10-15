@@ -43,14 +43,14 @@ export const Layout = (props: React.PropsWithChildren) => {
 
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="robots" content="index,follow" />
-          <meta name="description" content="Stratis Staking Solution" />
+          <meta name="description" content="Xertra Staking Solution" />
           <meta name="twitter:image" content="/splash.png" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="STRAX LSD APP" />
-          <meta name="twitter:description" content="Stratis Staking Solution" />
+          <meta name="twitter:description" content="Xertra Staking Solution" />
 
           <meta property="og:title" content="STRAX LSD APP" />
-          <meta property="og:description" content="Stratis Staking Solution" />
+          <meta property="og:description" content="Xertra Staking Solution" />
 
           <meta property="og:type" content="website" />
           <meta property="og:image" content="/splash.png" />
@@ -58,7 +58,7 @@ export const Layout = (props: React.PropsWithChildren) => {
           <meta property="og:image:height" content="600" />
           <meta property="og:locale" content="en" />
 
-          <meta name="description" content="Stratis Staking Solution" />
+          <meta name="description" content="Xertra Staking Solution" />
         </Head>
 
         <HideOnScroll>
